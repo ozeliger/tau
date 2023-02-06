@@ -20,9 +20,16 @@ Quickly swap crypto tokens on Filecoin. Tau's implementation is a more gas-optim
 [Try swapping crypto on Hyperspace](https://tau-fvm.vercel.app/en/exchange/swap).
 
 
+
 # 2. Yield Farming
 
 With the liquidity pool tokens you receive when you supply liquidity, you can choose to farm these tokens in our high-yield farm vaults. In return, you receive an amount (scaled by demand) of `TAU` tokens, which are governance tokens on Tau. The longer you stake your liquidity pool tokens, the more amount of `TAU` you will receive.
 
 
 [Try yield farming on Hyperspace](https://tau-fvm.vercel.app/farm).
+
+
+
+# 3. Lending & Borrowing
+
+Tau introduces an institution-grade DeFi borrowing and lending protocol featuring ***permissionless*** liquidity pools, allowing anyone to lend and borrow assets at high APYs. The source code for Tau's Lending & Borrowing protocol is [*massive* and *rigorously-tested*. Have a glance; I won't disappoint ;)](https://github.com/ozeliger/tau/blob/dev/contracts/contracts/vaults/TauVault.sol).
