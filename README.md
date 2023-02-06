@@ -10,3 +10,11 @@ Tau allows users on the [Hyperspace Network](https://fvm.filecoin.io/) to trade 
 3. Capital-efficient Lending & Borrowing Protocol
 4. Auto-farming Stablecoin (`taUSD`)
 5. Secure Cross-chain Bridge
+
+
+# 1. Swapping Crypto
+
+Quickly swap crypto tokens on Filecoin. Tau's implementation is a more gas-optimized version of [Uniswap v2](https://uniswap.org/blog/uniswap-v2). You can also add liquidity to the various pools supported to further strengthen the protocol. 
+
+
+[Try swapping crypto on Hyperspace](https://tau-fvm.vercel.app/en/exchange/swap).
