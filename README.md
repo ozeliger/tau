@@ -49,3 +49,10 @@ Tau introduces an institution-grade DeFi borrowing and lending protocol featurin
 3. **Gentle Liquidation**: `taUSD` has gentle liquidation, meaning that when a `taUSD` borrowing position faces liquidation, only a *small* portion of the position is liquidated until it is brought back to health. This model results in lower associated costs and liquidation risk for `taUSD` borrowers.
 
 [Try minting `taUSD` on Filecoin](https://tau-fvm.vercel.app/stablecoin).
+
+
+# 5. Cross-Chain Bridge
+
+Tau has a cross-chain bridge to facilitate interoperability between Filecoin and other chains (such as Polygon). Currently, Tau supports Hyperspace <=> Polygon Mumbai, with more chains being supported very soon.
+
+[Try bridging assets from Filecoin to Polygon Mumbai](https://tau-fvm.vercel.app/bridge).
