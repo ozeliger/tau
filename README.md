@@ -1,5 +1,10 @@
 # Tau
 
+# Demo
+
+* [Website](https://tau-fvm.vercel.app/)
+
+
 # What is Tau?
 
 Tau introduces a next-gen decentralized exchange providing liquidity, an auto-farming stablecoin, and enabling peer-to-peer transactions on the Filecoin Hyperspace network. 
@@ -34,6 +39,16 @@ With the liquidity pool tokens you receive when you supply liquidity, you can ch
 
 Tau introduces an institution-grade DeFi borrowing and lending protocol featuring ***permissionless*** liquidity pools, allowing anyone to lend and borrow assets at high APYs. The source code for Tau's Lending & Borrowing protocol is [*massive* and *rigorously-tested*. Have a glance; I won't disappoint ;)](https://github.com/ozeliger/tau/blob/dev/contracts/contracts/vaults/TauVault.sol).
 
+
+### Some points
+
+1. Lenders receive an amount of interest-bearing tokens (`ibTokens`) which continously earn interest through their exchange rate. In addition, lenders may choose to mint the `taUSD` stablecoin by depositing `ibTokens` (more on this later).
+1. Borrowers pay 0.1% of the borrowed amount as an "origination" fee, which is added to the total borrow amount in its respective RToken.
+2. Liquidations carry a 10% fee paid directly to the liquidator.
+3. All transactions occur on the [Hyperspace Network](https://fvm.filecoin.io/).
+
+
+[Try lending/borrowing on Filecoin](https://tau-fvm.vercel.app/lend).
 
 
 # 4. Stablecoin (`taUSD`)
