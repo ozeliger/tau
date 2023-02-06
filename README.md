@@ -18,3 +18,11 @@ Quickly swap crypto tokens on Filecoin. Tau's implementation is a more gas-optim
 
 
 [Try swapping crypto on Hyperspace](https://tau-fvm.vercel.app/en/exchange/swap).
+
+
+# 2. Yield Farming
+
+With the liquidity pool tokens you receive when you supply liquidity, you can choose to farm these tokens in our high-yield farm vaults. In return, you receive an amount (scaled by demand) of `TAU` tokens, which are governance tokens on Tau. The longer you stake your liquidity pool tokens, the more amount of `TAU` you will receive.
+
+
+[Try yield farming on Hyperspace](https://tau-fvm.vercel.app/farm).
