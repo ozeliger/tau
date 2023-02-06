@@ -3,6 +3,7 @@
 # Demo
 
 * [Website](https://tau-fvm.vercel.app/)
+* [Demo Video](https://drive.google.com/drive/folders/1kasMsK-y-ZDmV1K2toHj9C0JEtjmqIM0?usp=share_link) (the video is slightly longer than 4 min despite me trying my best. Tau has *a lot* of features :/)
 
 
 # What is Tau?
