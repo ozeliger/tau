@@ -33,3 +33,19 @@ With the liquidity pool tokens you receive when you supply liquidity, you can ch
 # 3. Lending & Borrowing
 
 Tau introduces an institution-grade DeFi borrowing and lending protocol featuring ***permissionless*** liquidity pools, allowing anyone to lend and borrow assets at high APYs. The source code for Tau's Lending & Borrowing protocol is [*massive* and *rigorously-tested*. Have a glance; I won't disappoint ;)](https://github.com/ozeliger/tau/blob/dev/contracts/contracts/vaults/TauVault.sol).
+
+
+
+# 4. Stablecoin (`taUSD`)
+
+`taUSD` is an *overcollateralized*, *auto-farming* stablecoin reinforced with **multi-layered pegging mechanisms** to maintain its peg at $1. Lenders on Tau collateralize their `ibTokens` to borrow `taUSD` (issued 1:1). Thus, lenders are able to continue earning high lending APR, while also borrowing `taUSD` to use as they see fit. This, we believe, unlocks even higher profit potential and greatly increases the flexibility of user's capital. 
+
+`taUSD` is a mini-fork of the battle-tested MakerDAO, with the following improvements:
+
+1. **Farmable Collateral**: For most lending protocols, users have to decide between staking their assets to earn yield, or staking their assets as collateral to borrow against. With Tau, users don't need to make this tradeoff -- users can deposit their assets as collateral to borrow `taUSD`, while also continuing to earn juicy lending APY. Also, because the lending APY for most vaults are much higher than the stability fee for `taUSD` (2.5%), these loans are effectively better than interest-free: they are yield-bearing, auto-farming loans!
+
+2. **Efficient Pegging**: Just being overcollateralized is not enough to maintain a stable peg. The protocol takes inspiration from MakerDAO, and automatically adjusts borrowing interest up/down to decrease/increase selling pressure depending on which side of $1 the collateral value falls to.
+
+3. **Gentle Liquidation**: `taUSD` has gentle liquidation, meaning that when a `taUSD` borrowing position faces liquidation, only a *small* portion of the position is liquidated until it is brought back to health. This model results in lower associated costs and liquidation risk for `taUSD` borrowers.
+
+[Try minting `taUSD` on Filecoin](https://tau-fvm.vercel.app/stablecoin).
